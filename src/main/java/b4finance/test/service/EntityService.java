@@ -88,6 +88,9 @@ public class EntityService {
         if (entity != null) {
             throw new SystemException(ErrorCode.ENTITY_ALREADY_EXISTS);
         }
+        
+        checkCyclicDependencies();
+        
         entity = new EntityNode(request.getName());
         entity.setCategoryType(CategoryType.valueOf(request.getCategory()));
         if (!StringUtils.isEmpty(request.getParentName())) {
@@ -160,4 +163,7 @@ public class EntityService {
         }
     }
     
+    private void checkCyclicDependencies() {
+        // TODO: implement
+    }
 }

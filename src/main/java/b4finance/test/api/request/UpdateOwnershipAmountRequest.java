@@ -5,14 +5,21 @@
  */
 package b4finance.test.api.request;
 
+import javax.validation.constraints.NotNull;
+
 /**
  *
  * @author g578689
  */
 public class UpdateOwnershipAmountRequest {
     
+    @NotNull
     private String childName;
+    
+    @NotNull
     private String parentName;
+    
+    @NotNull
     private double percentage;
 
     public String getChildName() {

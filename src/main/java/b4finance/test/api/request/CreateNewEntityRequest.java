@@ -5,16 +5,24 @@
  */
 package b4finance.test.api.request;
 
+import javax.validation.constraints.NotNull;
+
 /**
  *
  * @author g578689
  */
 public class CreateNewEntityRequest {
     
+    @NotNull
     private String name;
+    
+    @NotNull
     private String category;
+    
     private String childName;
+    
     private String parentName;
+    
     private double percentage;
 
     public String getName() {
