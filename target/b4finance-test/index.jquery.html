@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CCMID IDP</title>
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+<div class="header">
+
+</div>
+<div class="container">
+
+    <h1 id="registration-anchor">Retrieve beneficial owners</h1>
+
+    <p>
+        <span class="legend">Company ID</span>
+        <input class="input text" id="company-id">
+    </p>
+    
+    <p>
+        <label class="legend">
+            <button class="button" id="get-beneficial-owners">Retrieve beneficial owners</button>
+        </label>
+
+    </p>
+
+    <p>
+        <span class="legend">Beneficial owners response</span>
+        <code class="code block" id="beneficial-owners-response"></code>
+    </p>
+
+</div>
+<div class="info backdrop">
+    <div class="info message"></div>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/qrcode.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/vendor/jquery.ui.widget.js"></script>
+<script src="js/jquery.iframe-transport.js"></script>
+<script src="js/jquery.fileupload.js"></script>
+<script src="js/remid/wrapper.js"></script>
+
+</body>
+</html>

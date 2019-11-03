@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>CCMID IDP</title>
+        <link href="css/main.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="header">
+        </div>
+        <div class="container">
+
+            <h1 id="get-beneficial-owners-section">Retrieve beneficial owners</h1>
+
+            <p>
+                <span class="legend">Company Name</span>
+                <input class="input text" id="company-id">
+            </p>
+
+            <p>
+                <label class="legend">
+                    <button class="button" id="get-beneficial-owners">Retrieve beneficial owners</button>
+                </label>
+            </p>
+
+            <p>
+                <span class="legend">Beneficial owners response</span>
+                <code class="code block" id="beneficial-owners-response"></code>
+            </p>
+
+            <h1 id="get-graph-section">Get Graph</h1>
+
+            <p>
+                <span class="legend">Company Name</span>
+                <input class="input text" id="get-graph-company-id">
+            </p>
+
+            <p>
+                <label class="legend">
+                    <button class="button" id="get-graph">Get Graph</button>
+                </label>
+            </p>
+
+            <p>
+                <span class="legend">Get Graph response</span>
+                <code class="code block" id="get-graph-response"></code>
+            </p>
+
+            <h1 id="update-ownership-section">Update ownership</h1>
+
+            <p>
+                <span class="legend">Company Child Name</span>
+                <input class="input text" id="update-ownership-child-company-id">
+            </p>
+            <p>
+                <span class="legend">Company Parent Name</span>
+                <input class="input text" id="update-ownership-parent-company-id">
+            </p>
+            <p>
+                <span class="legend">New ownership amount</span>
+                <input class="input text" id="update-ownership-ownership-amount-id">
+            </p>
+
+            <p>
+                <label class="legend">
+                    <button class="button" id="update-ownership">Update ownership</button>
+                </label>
+            </p>
+            
+            <h1 id="create-entity-section">Create entity</h1>
+
+            <p>
+                <span class="legend">Entity name</span>
+                <input class="input text" id="create-entity-name-id">
+            </p>
+            <p>
+                <span class="legend">Entity category</span>
+                <input class="input text" id="create-entity-category-id">
+            </p>
+            <p>
+                <span class="legend">Company Child Name</span>
+                <input class="input text" id="create-entity-ownership-child-company-id">
+            </p>
+            <p>
+                <span class="legend">Company Parent Name</span>
+                <input class="input text" id="create-entity-ownership-parent-company-id">
+            </p>
+            <p>
+                <span class="legend">Ownership amount</span>
+                <input class="input text" id="create-entity-ownership-amount-id">
+            </p>
+
+            <p>
+                <label class="legend">
+                    <button class="button" id="create-entity">Create entity</button>
+                </label>
+            </p>
+            
+            <h1 id="delete-entity-section">Delete entity</h1>
+
+            <p>
+                <span class="legend">Entity name</span>
+                <input class="input text" id="delete-entity-name-id">
+            </p>
+
+            <p>
+                <label class="legend">
+                    <button class="button" id="delete-entity">Delete entity</button>
+                </label>
+            </p>
+
+        </div>
+        <div class="info backdrop">
+            <div class="info message"></div>
+        </div>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="js/qrcode.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/jquery.ui.widget.js"></script>
+        <script src="js/jquery.iframe-transport.js"></script>
+        <script src="js/jquery.fileupload.js"></script>
+        <script src="js/remid/wrapper.js"></script>
+
+    </body>
+</html>
