@@ -9,7 +9,7 @@
     <version>1.0</version>
     
     <properties>
-        <slf4j.version>1.7.18</slf4j.version>
+        <slf4j.version>1.7.26</slf4j.version>
         <deltaspike.version>1.8.2</deltaspike.version>
         <hsqldb.version>2.4.0</hsqldb.version>
         <log4j2.version>2.11.2</log4j2.version>
